@@ -114,7 +114,7 @@ Weapons
 ******/
 
 /obj/item/weapon/gun/projectile/revolver/webley/captain
-	name = "\improper Final Argument"
+	name = "\improper A&M Neoclassic"
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	icon_state = "mosley"
 	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. Uses .44 magnum rounds. This one has 'To the Captain of SEV Torch' engraved."

@@ -82,11 +82,13 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/XO
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/XO/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/XO/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/XO/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o5,
 		/datum/mil_rank/fleet/o5,
+		/datum/mil_rank/marine/o5,
 		/datum/mil_rank/fleet/o4
 	)
 	min_skill = list(	/decl/hierarchy/skill/organizational/management 	= SKILL_ADEPT,
@@ -202,12 +204,18 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o3,
 		/datum/mil_rank/fleet/o3,
-		/datum/mil_rank/fleet/o2
+		/datum/mil_rank/marine/o3,
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/marine/o2,
+		/datum/mil_rank/ec/o1,
+		/datum/mil_rank/fleet/o1,
+		/datum/mil_rank/marine/o1
 	)
 	min_skill = list(	/decl/hierarchy/skill/organizational/management 	= SKILL_ADEPT,
 						/decl/hierarchy/skill/organizational/bureaucracy	= SKILL_BASIC,
@@ -252,12 +260,18 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/cos/fleet
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/cos/marine
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/marine/o4,
 		/datum/mil_rank/ec/o3,
 		/datum/mil_rank/fleet/o3,
-		/datum/mil_rank/fleet/o2
+		/datum/mil_rank/marine/o3,
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/marine/o2,
+		/datum/mil_rank/ec/o1,
+		/datum/mil_rank/fleet/o1,
+		/datum/mil_rank/marine/o1
 	)
 	min_skill = list(	/decl/hierarchy/skill/organizational/management 	= SKILL_ADEPT,
 						/decl/hierarchy/skill/organizational/bureaucracy	= SKILL_ADEPT,
@@ -350,14 +364,18 @@
 	minimal_player_age = 21
 	economic_modifier = 8
 	ideal_character_age = 45
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea
 	allowed_branches = list(
-		/datum/mil_branch/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/sea/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e9,
+		/datum/mil_rank/marine/e9,
 		/datum/mil_rank/fleet/e9_alt1,
-		/datum/mil_rank/fleet/e8
+		/datum/mil_rank/marine/e9_alt1,
+		/datum/mil_rank/fleet/e8,
+		/datum/mil_rank/marine/e8_alt
 	)
 	min_skill = list(	/decl/hierarchy/skill/organizational/management	= SKILL_ADEPT,
 						/decl/hierarchy/skill/general/EVA			= SKILL_BASIC,
@@ -391,11 +409,13 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1
+		/datum/mil_rank/fleet/o1,
+		/datum/mil_rank/marine/o1
 	)
 	min_skill = list(	/decl/hierarchy/skill/organizational/management 	= SKILL_BASIC,
 						/decl/hierarchy/skill/organizational/bureaucracy	= SKILL_BASIC,
@@ -488,15 +508,19 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e8,
+		/datum/mil_rank/marine/e8,
 		/datum/mil_rank/ec/e7,
 		/datum/mil_rank/fleet/e7,
+		/datum/mil_rank/marine/e7,
 		/datum/mil_rank/fleet/e6,
+		/datum/mil_rank/marine/e6,
 		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/ec/e5
+		/datum/mil_rank/marine/e5
 	)
 	min_skill = list(	/decl/hierarchy/skill/organizational/management	= SKILL_BASIC,
 						/decl/hierarchy/skill/general/computer			= SKILL_BASIC,
@@ -541,15 +565,18 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/marine/e5,
 		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/ec/e5,
+		/datum/mil_rank/marine/e4,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/fleet/e2
+		/datum/mil_rank/marine/e3,
+		/datum/mil_rank/fleet/e2,
+		/datum/mil_rank/marine/e2
 	)
 	min_skill = list(	/decl/hierarchy/skill/general/computer			= SKILL_BASIC,
 						/decl/hierarchy/skill/general/EVA				= SKILL_BASIC,
@@ -654,15 +681,19 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/brig_officer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/brig_officer/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/brig_officer/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/brig_officer/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e8,
+		/datum/mil_rank/marine/e8,
 		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/ec/e5,
 		/datum/mil_rank/fleet/e7,
+		/datum/mil_rank/marine/e7,
 		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/fleet/e5
+		/datum/mil_rank/marine/e6,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/marine/e5
 	)
 	min_skill = list(	/decl/hierarchy/skill/organizational/management 	= SKILL_BASIC,
 						/decl/hierarchy/skill/organizational/bureaucracy	= SKILL_ADEPT,
@@ -695,14 +726,16 @@
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/marine,
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/ec/e3,
+		/datum/mil_rank/marine/e3,
 		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/marine/e4,
 		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/marine/e5,
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor,
 		/datum/mil_rank/civ/marshal = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/marshal
 	)
@@ -730,17 +763,22 @@
 	economic_modifier = 4
 	minimal_player_age = 10
 	ideal_character_age = 25
-	alt_titles = list()
+	alt_titles = list(
+		"Military Police")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/maa/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/marine/e2,
+		/datum/mil_rank/marine/e3,
+		/datum/mil_rank/marine/e4
 	)
 	min_skill = list(	/decl/hierarchy/skill/organizational/bureaucracy	= SKILL_BASIC,
 						/decl/hierarchy/skill/general/EVA					= SKILL_BASIC,
@@ -925,18 +963,24 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o1 = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/commissioned,
 		/datum/mil_rank/fleet/o1,
+		/datum/mil_rank/marine/o1,
 		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/marine/o2,
 		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/marine/e5,
 		/datum/mil_rank/fleet/e6,
+		/datum/mil_rank/marine/e6,
 		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/ec/e5,
 		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e8
+		/datum/mil_rank/marine/e7,
+		/datum/mil_rank/fleet/e8,
+		/datum/mil_rank/marine/e8
 	)
 	min_skill = list(	/decl/hierarchy/skill/organizational/management		= SKILL_BASIC,
 						/decl/hierarchy/skill/organizational/bureaucracy	= SKILL_ADEPT,
@@ -964,13 +1008,16 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/tech
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/supply/tech/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/supply/tech/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/supply/tech/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/ec/e3,
+		/datum/mil_rank/marine/e2,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4
+		/datum/mil_rank/marine/e3,
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/marine/e4
 	)
 	min_skill = list(	/decl/hierarchy/skill/organizational/bureaucracy	= SKILL_BASIC,
 						/decl/hierarchy/skill/organizational/finance		= SKILL_BASIC,
@@ -1047,14 +1094,17 @@
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/torch/crew/service/cook/ec,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/service/cook/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/service/cook/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/service/cook/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e2,
+		/datum/mil_rank/marine/e2,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4
+		/datum/mil_rank/marine/e3,
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/marine/e4
 	)
 	min_skill = list(	/decl/hierarchy/skill/service/cooking	 	= SKILL_ADEPT,
 						/decl/hierarchy/skill/service/botany		= SKILL_BASIC,
@@ -1096,13 +1146,17 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/service/crewman/fleet
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/service/crewman/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/service/crewman/marine
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e2,
+		/datum/mil_rank/marine/e2,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4
+		/datum/mil_rank/marine/e3,
+		/datum/mil_rank/ec/e3,
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/marine/e4
 	)
 
 

@@ -43,7 +43,7 @@
 /obj/item/weapon/paper/proc/set_content(text,title)
 	if(title)
 		SetName(title)
-	info = html_encode(text)
+	info = rhtml_encode(text)
 	info = parsepencode(text)
 	update_icon()
 	update_space(info)
@@ -195,6 +195,7 @@
 	return (user && user.real_name) ? user.real_name : "Anonymous"
 
 /obj/item/weapon/paper/proc/parsepencode(t, obj/item/weapon/pen/P, mob/user, iscrayon, isfancy)
+	t = cp1251_to_utf8(t)
 	if(length(t) == 0)
 		return ""
 

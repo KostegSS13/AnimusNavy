@@ -82,3 +82,13 @@
 
 /datum/gear/uniform/frontier
 	allowed_roles = NON_MILITARY_ROLES
+
+/datum/gear/tactical/tan_fatigues
+	allowed_roles = MILITARY_ROLES
+	display_name = "Marine's Tan Fatigues"
+	path = /obj/item/clothing/under/solgov/utility/marine/tan
+
+/datum/gear/tactical/urban_fatigues
+	allowed_roles = MILITARY_ROLES
+	display_name = "Marine's Urban Fatigues"
+	path = /obj/item/clothing/under/solgov/utility/marine/urban
