@@ -262,3 +262,18 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 600)
 	max_ammo = 7
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/new_9mm
+	name = "long magazine (9mm)"
+	icon_state = "9mm_mag"
+	origin_tech = list(TECH_COMBAT = 3)
+	mag_type = MAGAZINE
+	matter = list(DEFAULT_WALL_MATERIAL = 1000)
+	caliber = "9mm"
+	ammo_type = /obj/item/ammo_casing/c9mm
+	max_ammo = 17
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/new_9mm/empty
+	initial_ammo = 0
+	icon_state = "9mm_mag_empty"

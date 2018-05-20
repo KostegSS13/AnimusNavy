@@ -89,6 +89,90 @@
 	else
 		icon_state = "magnum-e"
 
+/obj/item/weapon/gun/projectile/deagle_pistol
+	name = ".50 heavy pistol"
+	desc = "The MRI IMI Desert Eagle, a robust sidearm that uses .50 AE ammo."
+	icon_state = "deagle"
+	item_state = "revolver"
+	force = 14.0
+	caliber = ".50"
+	fire_delay = 16
+	screen_shake = 2
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/a50
+	allowed_magazines = /obj/item/ammo_magazine/a50
+
+/obj/item/weapon/gun/projectile/deagle_pistol/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "deagle"
+	else
+		icon_state = "deagle-e"
+
+/obj/item/weapon/gun/projectile/deaglet_pistol
+	name = ".50 heavy pistol"
+	desc = "Heavy modified deagle, a VERY robust sidearm that uses .50 AE ammo."
+	icon_state = "deaglet"
+	item_state = "revolver"
+	force = 16.0
+	caliber = ".50"
+	fire_delay = 4
+	screen_shake = 1
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/a50
+	allowed_magazines = /obj/item/ammo_magazine/a50
+	auto_eject = 1
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+
+/obj/item/weapon/gun/projectile/deaglet_pistol/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "deaglet"
+	else
+		icon_state = "deaglet-e"
+
+/obj/item/weapon/gun/projectile/glock
+	name = ".9mm little pistol"
+	desc = "The famous Glock 17, a little-sized sidearm that uses 9mm ammo."
+	icon_state = "glock"
+	item_state = "pistol"
+	w_class = ITEM_SIZE_SMALL
+	force = 6.0
+	caliber = "9mm"
+	fire_delay = 4
+	screen_shake = 1
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/new_9mm
+	allowed_magazines = /obj/item/ammo_magazine/new_9mm
+
+/obj/item/weapon/gun/projectile/glock/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "glock"
+	else
+		icon_state = "glock_empty"
+
+/obj/item/weapon/gun/projectile/beretta
+	name = ".9mm classic pistol"
+	desc = "This is Beretta Neoclassic M9, a normal-sized handgun that uses 9mm ammo."
+	icon_state = "deagle"
+	item_state = "pistol"
+	w_class = ITEM_SIZE_NORMAL
+	force = 8.0
+	caliber = "9mm"
+	fire_delay = 8
+	screen_shake = 1
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/new_9mm
+	allowed_magazines = /obj/item/ammo_magazine/new_9mm
+
+/obj/item/weapon/gun/projectile/beretta/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "M9"
+	else
+		icon_state = "M9_empty"
+
 /obj/item/weapon/gun/projectile/gyropistol
 	name = "gyrojet pistol"
 	desc = "A bulky pistol designed to fire self propelled rounds."
