@@ -165,6 +165,7 @@
 	
 	/obj/item/weapon/reagent_containers/food/drinks/milk/Savinayogurt
 	name = "small milk carton"
+	desc = "Savina Encorporated Yogurt"
 	volume = 30
 	icon_state = "mini-milk"
 /obj/item/weapon/reagent_containers/food/drinks/milk/Savinayogurt/New()
