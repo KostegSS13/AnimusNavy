@@ -162,6 +162,14 @@
 /obj/item/weapon/reagent_containers/food/drinks/milk/smallcarton/chocolate/New()
 	..()
 	reagents.add_reagent(/datum/reagent/drink/milk/chocolate, 30)
+	
+	/obj/item/weapon/reagent_containers/food/drinks/milk/Savinayogurt
+	name = "small milk carton"
+	volume = 30
+	icon_state = "mini-milk"
+/obj/item/weapon/reagent_containers/food/drinks/milk/Savinayogurt/New()
+	..()
+	reagents.add_reagent(/datum/reagent/drink/SavinaYogurt, 30)
 
 
 /obj/item/weapon/reagent_containers/food/drinks/coffee
