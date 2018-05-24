@@ -155,7 +155,7 @@
 /obj/item/weapon/gun/projectile/beretta
 	name = ".9mm classic pistol"
 	desc = "This is Beretta Neoclassic M9, a normal-sized handgun that uses 9mm ammo."
-	icon_state = "deagle"
+	icon_state = "M9"
 	item_state = "pistol"
 	w_class = ITEM_SIZE_NORMAL
 	force = 8.0

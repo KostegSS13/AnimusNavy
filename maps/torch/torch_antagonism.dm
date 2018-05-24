@@ -15,4 +15,4 @@
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
 
 /datum/antagonist/traitor
-	blacklisted_jobs = list(/datum/job/merchant, /datum/job/captain, /datum/job/hop)
+	blacklisted_jobs = list(/datum/job/merchant, /datum/job/captain)
