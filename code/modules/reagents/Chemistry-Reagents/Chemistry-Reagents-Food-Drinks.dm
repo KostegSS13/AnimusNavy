@@ -666,6 +666,15 @@
 
 	glass_name = "milk"
 	glass_desc = "White and nutritious goodness!"
+	
+/datum/reagent/drink/SavinaYogurt
+	name = "Yogurt"
+	description = "Looks like yogurt. Somehow this reminds you of someone named Liza Savina"
+	taste_description = "Some kind of protein"
+	color = "#dfdfdf"
+
+	glass_name = "Yogurt"
+	glass_desc = "Looks like yogurt, possibly Yogurt. Somehow this reminds you of some Liza"
 
 /datum/reagent/drink/milk/chocolate
 	name =  "Chocolate Milk"
